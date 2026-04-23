@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Man Intense Force — Recupere Sua Energia. Retome Seu Poder.</title>
+  <link rel="icon" type="image/x-icon" href="imgs/favicon.ico">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <canvas id="particles-canvas"></canvas>
+
+  <!-- NAV -->
+  <nav class="logo-topo">
+    <div class="logo">
+      <img src="imgs/alphagenin.webp" alt="AlphaGenin" class="navbar-logo">
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-fog"></div>
+
+    <div class="hero-inner container">
+      <div class="hero-content reveal">
+        <h1 class="hero-title">
+          Recupere sua<br>
+          <span class="glow-text">Energia.</span><br>
+          Retome seu<br>
+          <span class="glow-text">Poder.</span>
+        </h1>
+        <p class="hero-sub">
+          A fórmula bioativa premium desenvolvida para homens que exigem performance máxima — física, mental e hormonal.
+        </p>
+        <div class="hero-stats">
+          <div class="stat">
+            <strong>94%</strong>
+            <span>Relataram mais energia</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <strong>12+</strong>
+            <span>Ativos na fórmula</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <strong>30 Dias</strong>
+            <span>Garantia de reembolso</span>
+          </div>
+        </div>
+        <div class="hero-cta-group">
+          <a href="#pricing" class="btn btn-primary">
+            <span>ATIVAR MINHA FÓRMULA</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <img class="secure-purchase" src="imgs/compra segura.webp" alt="Compra Segura">
+        </div>
+      </div>
+
+      <div class="hero-product reveal-right">
+        <img class="product-image" src="imgs/arte1.png" alt="Produto Man Intense Force">
+      </div>
+    </div>
+  </section>
+
+  <!-- PAIN POINTS -->
+  <section class="pain-points section-pad section-blue" id="pain">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">VOCÊ SE IDENTIFICA?</span>
+        <h2 class="section-title">Esses Sintomas Estão <span class="glow-text">Te Travando?</span></h2>
+        <p class="section-sub">Milhões de homens sofrem com isso todos os dias em silêncio — a maioria não sabe que tudo está conectado a uma única causa raiz.</p>
+      </div>
+      <div class="pain-grid">
+        <div class="pain-card reveal cansaco-constante">
+          <div class="pain-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+          </div>
+          <h3>Cansaço Constante</h3>
+          <p>Acordar exausto independente de quanto dormiu. Arrastar o dia sem energia, sem motivação, sem disposição.</p>
+        </div>
+        <div class="pain-card reveal nevoa-mental">
+          <div class="pain-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+          </div>
+          <h3>Névoa Mental</h3>
+          <p>Dificuldade de concentração, memória fraca, raciocínio lento. Sua clareza mental foi embora.</p>
+        </div>
+        <div class="pain-card reveal baixa-libido">
+          <div class="pain-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" y1="22" x2="4" y2="15"/></svg>
+          </div>
+          <h3>Baixa Libido</h3>
+          <p>O desejo e a performance já não são os mesmos. A confiança está indo junto — e isso afeta tudo.</p>
+        </div>
+        <div class="pain-card reveal perda-massa">
+          <div class="pain-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+          </div>
+          <h3>Perda de Massa</h3>
+          <p>Treinando forte mas perdendo resultados. Recuperação demorada. Força caindo sem explicação.</p>
+        </div>
+        <div class="pain-card reveal irritabilidade">
+          <div class="pain-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+          </div>
+          <h3>Irritabilidade</h3>
+          <p>Oscilações de humor, ansiedade, falta de resiliência emocional. O desequilíbrio hormonal destrói seu estado mental.</p>
+        </div>
+        <div class="pain-card reveal sono-ruim">
+          <div class="pain-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2a10 10 0 100 20A10 10 0 0012 2z"/><path d="M12 6v6l4 2"/></svg>
+          </div>
+          <h3>Sono Ruim</h3>
+          <p>Noites agitadas, acordando às 3h, nunca sentindo descanso real. Seu corpo não consegue se recuperar.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROBLEM AWARENESS -->
+  <section class="problem-section section-pad">
+    <div class="problem-bg"></div>
+    <div class="container">
+      <div class="problem-inner reveal">
+        <div class="problem-content">
+          <span class="section-label">A CAUSA RAIZ</span>
+          <h2 class="section-title">Não é sua Idade.<br>São seus <span class="glow-text">Hormônios.</span></h2>
+          <p class="problem-body">
+            Após os 30, os níveis de testosterona caem <strong>1 a 2% todo ano</strong>. Somado ao estresse crônico, má alimentação e toxinas ambientais — o motor hormonal do seu corpo está sendo silenciado.
+          </p>
+          <p class="problem-body">
+            O resultado? Você se sente uma sombra do homem que era. Não por fraqueza — mas porque sua biologia está contra você.
+          </p>
+          <p class="problem-body">
+            <strong class="glow-text">Man Intense Force</strong> age diretamente nessas vias, entregando ao seu corpo os ingredientes brutos que ele precisa para reacender o equilíbrio hormonal e restaurar seu poder natural.
+          </p>
+          <a href="#pricing" class="btn btn-primary">RESTAURAR MEU EQUILÍBRIO</a>
+        </div>
+        <div class="problem-visual">
+          <div class="stat-ring">
+            <svg viewBox="0 0 200 200" class="ring-svg">
+              <circle cx="100" cy="100" r="85" fill="none" stroke="rgba(0, 224, 255, 0.08)" stroke-width="16" stroke-linecap="round"/>
+              <circle cx="100" cy="100" r="85" fill="none" stroke="#00E0FF" stroke-width="16" stroke-dasharray="375 500" stroke-dashoffset="-125" stroke-linecap="round" class="ring-progress"/>
+            </svg>
+            <div class="ring-inner">
+              <strong>68%</strong>
+              <span>dos homens acima de 35 têm testosterona clinicamente baixa</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BENEFITS -->
+  <section class="benefits section-pad section-blue" id="benefits">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">O QUE VOCÊ GANHA</span>
+        <h2 class="section-title">Desenvolvido Para <span class="glow-text">Performance Máxima</span></h2>
+      </div>
+      <div class="benefits-grid">
+        <div class="benefit-item reveal">
+          <div class="benefit-number">01</div>
+          <div class="benefit-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#00E0FF" stroke-width="1.5"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+          </div>
+          <div class="benefit-content">
+            <h3>Energia Explosiva</h3>
+            <p>Energia sustentada e limpa, sem picos e quedas. Acorde recarregado e mantenha o foco o dia inteiro.</p>
+          </div>
+        </div>
+        <div class="benefit-item reveal">
+          <div class="benefit-number">02</div>
+          <div class="benefit-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#00E0FF" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <div class="benefit-content">
+            <h3>Suporte à Testosterona</h3>
+            <p>Ingredientes com estudos clínicos que suportam níveis saudáveis de testosterona e equilíbrio hormonal.</p>
+          </div>
+        </div>
+        <div class="benefit-item reveal">
+          <div class="benefit-number">03</div>
+          <div class="benefit-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#00E0FF" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+          </div>
+          <div class="benefit-content">
+            <h3>Clareza Mental</h3>
+            <p>Elimine a névoa mental. Foco aprimorado, memória fortalecida e raciocínio afiado sob pressão.</p>
+          </div>
+        </div>
+        <div class="benefit-item reveal">
+          <div class="benefit-number">04</div>
+          <div class="benefit-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#00E0FF" stroke-width="1.5"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+          </div>
+          <div class="benefit-content">
+            <h3>Libido no Pico</h3>
+            <p>Restaure seu desejo e sua confiança. Sinta a vitalidade dos seus anos mais jovens voltando com força.</p>
+          </div>
+        </div>
+        <div class="benefit-item reveal">
+          <div class="benefit-number">05</div>
+          <div class="benefit-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#00E0FF" stroke-width="1.5"><rect x="6" y="6" width="12" height="12" rx="2"/><path d="M12 10v4M10 12h4"/></svg>
+          </div>
+          <div class="benefit-content">
+            <h3>Recuperação Muscular</h3>
+            <p>Recuperação mais rápida, ganhos mais sólidos. Otimize o ambiente anabólico do seu corpo naturalmente.</p>
+          </div>
+        </div>
+        <div class="benefit-item reveal">
+          <div class="benefit-number">06</div>
+          <div class="benefit-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#00E0FF" stroke-width="1.5"><path d="M12 2a10 10 0 100 20A10 10 0 0012 2z"/><path d="M12 6v6l4 2"/></svg>
+          </div>
+          <div class="benefit-content">
+            <h3>Sono Restaurador</h3>
+            <p>Seu corpo regenera à noite. Otimize a arquitetura do sono para uma recuperação verdadeira.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMPARISON -->
+  <section class="comparison section-pad">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">A DIFERENÇA</span>
+        <h2 class="section-title">Por Que <span class="glow-text">Man Intense Force</span> Vence</h2>
+      </div>
+      <div class="comparison-grid reveal">
+        <div class="comp-card comp-others">
+          <div class="comp-header">
+            <span class="comp-label">SUPLEMENTOS GENÉRICOS</span>
+          </div>
+          <ul class="comp-list">
+            <li class="comp-neg">❌ Blends proprietários subdosados</li>
+            <li class="comp-neg">❌ Corantes, excipientes e enchimentos</li>
+            <li class="comp-neg">❌ Sem respaldo científico</li>
+            <li class="comp-neg">❌ Apenas pico de cafeína temporário</li>
+            <li class="comp-neg">❌ Fórmula unidimensional</li>
+            <li class="comp-neg">❌ Sem certificação de qualidade</li>
+            <li class="comp-neg">❌ Sem garantia de devolução</li>
+          </ul>
+        </div>
+        <div class="comp-card comp-product">
+          <div class="comp-glow-border"></div>
+          <div class="comp-header">
+            <span class="comp-badge">RECOMENDADO</span>
+            <span class="comp-label">MAN INTENSE FORCE</span>
+          </div>
+          <ul class="comp-list">
+            <li class="comp-pos">✓ Fórmula completa e transparente</li>
+            <li class="comp-pos">✓ Zero enchimentos — apenas bioativos puros</li>
+            <li class="comp-pos">✓ Ingredientes com estudos clínicos</li>
+            <li class="comp-pos">✓ Suporte hormonal por múltiplas vias</li>
+            <li class="comp-pos">✓ 12 ativos sinérgicos</li>
+            <li class="comp-pos">✓ Fabricado em instalação certificada GMP</li>
+            <li class="comp-pos">✓ Garantia de 30 dias ou devolução total</li>
+          </ul>
+          <a href="#pricing" class="btn btn-primary btn-sm">QUERO O MEU AGORA</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INGREDIENTS -->
+  <section class="ingredients section-pad section-blue" id="ingredients">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">A FÓRMULA</span>
+        <h2 class="section-title">12 Compostos Bioativos <span class="glow-text">de Precisão</span></h2>
+        <p class="section-sub">Cada ingrediente selecionado pela máxima sinergia. Nada escondido, nada desperdiçado.</p>
+      </div>
+      <div class="ingredients-grid">
+        <div class="ingredient-card reveal"><div class="ingredient-num">01</div><h4>Ashwagandha KSM-66®</h4><p>Comprovado clinicamente para reduzir cortisol e suportar testosterona sob estresse.</p></div>
+        <div class="ingredient-card reveal"><div class="ingredient-num">02</div><h4>Tribulus Terrestris</h4><p>Erva tradicional modernizada pela ciência para suportar atividade androgênica saudável.</p></div>
+        <div class="ingredient-card reveal"><div class="ingredient-num">03</div><h4>Zinco Bisglicinato</h4><p>A forma de zinco mais biodisponível — essencial para a síntese de testosterona.</p></div>
+        <div class="ingredient-card reveal"><div class="ingredient-num">04</div><h4>Vitamina D3 + K2</h4><p>A dupla hormônio-vitamina crítica para a produção e absorção de testosterona.</p></div>
+        <div class="ingredient-card reveal"><div class="ingredient-num">05</div><h4>Extrato de Maca</h4><p>Adaptógeno andino com décadas de uso para energia, resistência e vitalidade sexual.</p></div>
+        <div class="ingredient-card reveal"><div class="ingredient-num">06</div><h4>Extrato de Feno-grego</h4><p>Suporta os níveis de testosterona livre e melhora força e composição corporal.</p></div>
+        <div class="ingredient-card reveal"><div class="ingredient-num">07</div><h4>Magnésio Glicinato</h4><p>Cofator essencial em mais de 300 reações enzimáticas, melhorando sono e recuperação.</p></div>
+        <div class="ingredient-card reveal"><div class="ingredient-num">08</div><h4>L-Arginina HCL</h4><p>Precursor do óxido nítrico que melhora o fluxo sanguíneo, performance e pump.</p></div>
+        <div class="ingredient-card reveal"><div class="ingredient-num">09</div><h4>Panax Ginseng</h4><p>Adaptógeno milenar para energia, foco e função sexual masculina.</p></div>
+        <div class="ingredient-card reveal"><div class="ingredient-num">10</div><h4>Boro Quelato</h4><p>Mineral-traço comprovado para elevar os níveis de testosterona livre em poucos dias.</p></div>
+        <div class="ingredient-card reveal"><div class="ingredient-num">11</div><h4>Tongkat Ali 200:1</h4><p>A concentração de extrato mais potente — estimula diretamente a produção de testosterona.</p></div>
+        <div class="ingredient-card reveal"><div class="ingredient-num">12</div><h4>BioPerine® Pimenta Preta</h4><p>Potencializador de absorção patenteado que amplifica a biodisponibilidade em até 2000%.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials section-pad" id="testimonials">
+    <div class="section-glow-top"></div>
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">RESULTADOS REAIS</span>
+        <h2 class="section-title">Homens Que Assumiram o <span class="glow-text">Controle</span></h2>
+      </div>
+      <div class="testi-grid">
+        <div class="testi-card reveal">
+          <div class="testi-stars">★★★★★</div>
+          <blockquote>[Depoimento] Nunca pensei que um suplemento pudesse fazer tanta diferença. Minha energia voltou, meus treinos estão intensos demais, e minha esposa percebeu a mudança antes mesmo de eu contar pra ela.</blockquote>
+          <div class="testi-author">
+            <div class="testi-avatar">[C]</div>
+            <div>
+              <strong>[Nome do Cliente]</strong>
+              <span>[Idade] anos · Compra Verificada</span>
+            </div>
+          </div>
+        </div>
+        <div class="testi-card reveal testi-featured">
+          <div class="testi-badge">TOP AVALIAÇÃO</div>
+          <div class="testi-stars">★★★★★</div>
+          <blockquote>[Depoimento] Na semana 3 acordei diferente. Mais afiado. Mais no controle. Já testei dezenas de suplementos em 15 anos — esse é o único que dá pra sentir funcionando sem precisar adivinhar.</blockquote>
+          <div class="testi-author">
+            <div class="testi-avatar">[M]</div>
+            <div>
+              <strong>[Nome do Cliente]</strong>
+              <span>[Idade] anos · Compra Verificada</span>
+            </div>
+          </div>
+        </div>
+        <div class="testi-card reveal">
+          <div class="testi-stars">★★★★★</div>
+          <blockquote>[Depoimento] Minha testosterona estava no limite do baixo. Meu médico falava em TRT. Experimentei o Man Intense Force primeiro — em 60 dias meus níveis voltaram à faixa ideal. Incrível.</blockquote>
+          <div class="testi-author">
+            <div class="testi-avatar">[R]</div>
+            <div>
+              <strong>[Nome do Cliente]</strong>
+              <span>[Idade] anos · Compra Verificada</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GUARANTEE -->
+  <section class="guarantee section-pad section-blue">
+    <div class="container">
+      <div class="guarantee-inner reveal">
+        <div class="guarantee-badge">
+          <div class="shield-icon">
+            <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="#00E0FF" stroke-width="1.2">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              <polyline points="9 12 11 14 15 10"/>
+            </svg>
+            <div class="shield-glow"></div>
+          </div>
+          <div class="guarantee-days">30</div>
+          <span class="guarantee-label">DIAS DE GARANTIA</span>
+        </div>
+        <div class="guarantee-content">
+          <h2>Sem Risco.<br><span class="glow-text">Sem Concessões.</span></h2>
+          <p>Experimente o Man Intense Force por 30 dias completos. Se você não sentir uma diferença mensurável na sua energia, performance e disposição — devolvemos cada centavo. Sem perguntas. Sem formulários. Sem enrolação.</p>
+          <p>É assim que confiamos nessa fórmula.</p>
+          <a href="#pricing" class="btn btn-primary">COMEÇAR SEM RISCO HOJE</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section class="pricing section-pad" id="pricing">
+    <div class="section-glow-top"></div>
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">SEU INVESTIMENTO</span>
+        <h2 class="section-title">Escolha Seu <span class="glow-text">Plano de Performance</span></h2>
+        <p class="section-sub">Melhores resultados vistos após 60–90 dias. Estoque e economize.</p>
+      </div>
+      <div class="pricing-grid pg-ref">
+
+        <!-- CARD 1: 1 UNIDADE -->
+        <div class="price-card pg-card reveal">
+          <div class="pg-top">
+            <strong class="pg-months">1 Unidade</strong>
+          </div>
+          <div class="pg-body">
+            <div class="pg-product-img">
+              <img class="kitprod" src="imgs/1un.png" alt="Produto">
+            </div>
+            <div class="pg-price-block">
+              <span class="pg-unit-label">R$ 00,00 por frasco</span>
+              <div class="pg-old-price">De R$ <s>000,00</s></div>
+              <div class="pg-only-label">Por Apenas</div>
+              <div class="pg-main-price">
+                <sup>R$</sup><span class="pg-big">00</span><span class="pg-cents">,00<span class="pg-freq">/mês</span></span>
+              </div>
+              <div class="pg-installment">ou R$ 000,00 à vista</div>
+            </div>
+          </div>
+          <div class="pg-shipping">FRETE GRÁTIS</div>
+          <a href="#checkout-1u" class="btn btn-ghost btn-full pg-btn">Quero meu Man Intense Force agora</a>
+          <img class="secure-purchase pg-secure" src="imgs/compra segura.webp" alt="Compra Segura">
+        </div>
+
+        <!-- CARD 2: 2 UNIDADES — RECOMENDADO -->
+        <div class="price-card pg-card pg-featured reveal">
+          <div class="price-glow-border"></div>
+          <div class="pg-badge-top">RECOMENDADO</div>
+          <div class="pg-top">
+            <strong class="pg-months">2 Unidades</strong>
+          </div>
+          <div class="pg-body">
+            <div class="pg-product-img">
+              <img class="kitprod" src="imgs/2un.png" alt="Produto">
+            </div>
+            <div class="pg-price-block">
+              <span class="pg-unit-label">R$ 00,00 por frasco</span>
+              <div class="pg-old-price">De R$ <s>000,00</s></div>
+              <div class="pg-only-label">Por Apenas</div>
+              <div class="pg-main-price">
+                <sup>R$</sup><span class="pg-big">00</span><span class="pg-cents">,00<span class="pg-freq">/mês</span></span>
+              </div>
+              <div class="pg-installment">ou R$ 000,00 à vista</div>
+            </div>
+          </div>
+          <div class="pg-shipping">FRETE GRÁTIS</div>
+          <a href="#checkout-2u" class="btn btn-primary btn-full pg-btn">Quero meu Man Intense Force agora</a>
+          <img class="secure-purchase pg-secure" src="imgs/compra segura.webp" alt="Compra Segura">
+        </div>
+
+        <!-- CARD 3: 3 UNIDADES -->
+        <div class="price-card pg-card reveal">
+          <div class="pg-top">
+            <strong class="pg-months">3 Unidades</strong>
+          </div>
+          <div class="pg-body">
+            <div class="pg-product-img">
+              <img class="kitprod" src="imgs/3un.png" alt="Produto">
+            </div>
+            <div class="pg-price-block">
+              <span class="pg-unit-label">R$ 00,00 por frasco</span>
+              <div class="pg-old-price">De R$ <s>000,00</s></div>
+              <div class="pg-only-label">Por Apenas</div>
+              <div class="pg-main-price">
+                <sup>R$</sup><span class="pg-big">00</span><span class="pg-cents">,00<span class="pg-freq">/mês</span></span>
+              </div>
+              <div class="pg-installment">ou R$ 000,00 à vista</div>
+            </div>
+          </div>
+          <div class="pg-shipping">FRETE GRÁTIS</div>
+          <a href="#checkout-3u" class="btn btn-ghost btn-full pg-btn">Quero meu Man Intense Force agora</a>
+          <img class="secure-purchase pg-secure" src="imgs/compra segura.webp" alt="Compra Segura">
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq section-pad section-blue" id="faq">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">TEM DÚVIDAS?</span>
+        <h2 class="section-title">Perguntas <span class="glow-text">Frequentes</span></h2>
+      </div>
+      <div class="faq-list reveal">
+        <div class="faq-item">
+          <button class="faq-q">Em quanto tempo vou sentir os resultados?
+            <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-a"><p>A maioria dos homens relata melhora perceptível de energia e foco nas primeiras 2 semanas. As mudanças hormonais ficam mais pronunciadas entre 4 e 6 semanas. Para resultados completos, recomendamos o protocolo de 90 dias.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">Man Intense Force é seguro?
+            <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-a"><p>Sim. Cada lote é fabricado em instalação certificada GMP e testado por terceiros quanto à pureza e potência. A fórmula contém apenas compostos bioativos naturais. Consulte sempre seu médico se tiver condições preexistentes ou usar medicamentos.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">Como devo tomar?
+            <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-a"><p>Tome 2 cápsulas ao dia com uma refeição. O uso pela manhã é recomendado para benefícios de energia ao longo do dia. O uso diário e consistente é fundamental para o suporte hormonal cumulativo.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">E se não funcionar para mim?
+            <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-a"><p>Apoiamos cada frasco com nossa garantia de devolução de 30 dias. Basta entrar em contato com nosso suporte, devolver o produto (mesmo vazio), e você recebe o reembolso integral. Sem letras miúdas. Sem jogos.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">A entrega é discreta?
+            <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-a"><p>Com certeza. Todos os pedidos são enviados em embalagem simples e sem identificação do produto do lado de fora. Sua privacidade é totalmente protegida em cada etapa.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">Posso tomar junto com outros suplementos?
+            <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-a"><p>Man Intense Force foi desenvolvido para funcionar como fórmula completa. Pode ser tomado junto com whey protein e multivitamínicos gerais. Evite empilhar com outros boosters de testosterona para não sobrepor nutrientes.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section class="final-cta">
+    <div class="final-cta-glow"></div>
+    <div class="container">
+      <div class="final-cta-inner reveal">
+        <span class="section-label">O MOMENTO É AGORA</span>
+        <h2 class="final-title">
+          Pare de Sobreviver.<br>
+          Comece a <span class="glow-text">Dominar.</span>
+        </h2>
+        <p class="final-sub">Cada dia que passa é mais um dia de performance, energia e disposição reduzidas. Os homens que agem hoje são os que veem resultados amanhã.</p>
+        <a href="#pricing" class="btn btn-primary btn-xl">
+          <span>GARANTIR MINHA FÓRMULA AGORA</span>
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <img class="secure-purchase" src="imgs/compra segura.webp" alt="Compra Segura">
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="nav-logo">
+          <span class="logo-icon">⚡</span>
+          <span class="logo-text">MAN INTENSE<span class="logo-accent"> FORCE</span></span>
+        </div>
+        <div class="footer-links">
+          <a href="#">Política de Privacidade</a>
+          <a href="#">Termos de Uso</a>
+          <a href="#">Fale Conosco</a>
+          <a href="#">Política de Reembolso</a>
+        </div>
+      </div>
+      <div class="footer-disclaimer">
+        <p>Estes produtos não foram avaliados pela ANVISA. Este produto não se destina a diagnosticar, tratar, curar ou prevenir qualquer doença. Os resultados individuais podem variar. Consulte sempre seu médico antes de iniciar qualquer programa de suplementação.</p>
+        <p>© 2025 Man Intense Force. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
